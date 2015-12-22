@@ -12,5 +12,20 @@ public class Library {
     }
 
     public void printBooksContaining(String partialBookTitle) {
+        for (String bookTitle : books){
+            if (bookTitle.contains(partialBookTitle)){
+                printStream.println(bookTitle);
+            }
+        }
+
+    }
+
+    public void printBooksContainingWord(String partialBookTitle) {
+        for (String bookTitle : books){
+            if (bookTitle.matches(".*\\b"+partialBookTitle+"\\b.*")){
+                printStream.println(bookTitle);
+            }
+        }
+
     }
 }
