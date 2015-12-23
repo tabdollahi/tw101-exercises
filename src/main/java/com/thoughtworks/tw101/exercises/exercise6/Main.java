@@ -8,8 +8,21 @@ package com.thoughtworks.tw101.exercises.exercise6;
 // * Orcs are named “Orc” and have 20 initial hitpoints
 // * Trolls are named “Troll”, have 40 hit points and only take half damage
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
+        ArrayList<Monster> monsters = new ArrayList();
+
+        monsters.add(new Troll());
+        monsters.add(new Troll());
+        monsters.add(new Orc());
+        monsters.add(new Orc());
+
+        for (Monster m : monsters) {
+            m.takeDamage(10);
+            m.reportStatus();
+        }
     }
 }
