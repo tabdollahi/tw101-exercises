@@ -1,7 +1,5 @@
 package com.thoughtworks.tw101.introductory_programming_exercises;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
-
 public class DiamondExercises {
     public static void main(String[] args) {
         drawAnIsoscelesTriangle(3);
